@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Harjas Chahil</div>
+        <!-- <div class="logo">H.C</div> -->
         <div> 
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -38,9 +38,9 @@
         </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
+        <!-- <div class="section__pic-container">
             <img src="./assets/profile.jpeg" alt="Harjas Profile Pic" />
-        </div>
+        </div> -->
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title"> Harjas Chahil</h1>
@@ -66,8 +66,14 @@
         </div>
     </section>
     <section id ="about">
-        <p class="section__text__p1"> Get To Know More</p>
-        <h1 class="title">About Me</h1>
+        <svg viewBox="0 0 425 300">
+            <path id="curve-text" d="M -69 137 C 35 87 95 51 143 65 C 201 82 214 129 267 143 c 40.67 14.43 101 -7 238 -83 C 541.3333 53.6667 577.6667 47.3333 709 129" />
+                <text id="text1" y = "40">
+                <textPath id="moving-text" href="#curve-text" startOffset="50" >Get To Know More About Me</textPath>
+                </text>
+        </svg>
+        <!-- <p class="section__text__p1"> Get To Know More</p> -->
+        <!-- <h1 class="title">About Me</h1> -->
         <div class="section-container">
             <div class="section__pic-container">
                 <img src = "./assets/image.png" 
@@ -356,6 +362,7 @@
         <p> Copyright &#169; 2025 Harjas Chahil. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="movingtext.js"></script>
 
 </body>
 </html>
