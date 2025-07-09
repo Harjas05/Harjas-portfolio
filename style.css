@@ -323,6 +323,8 @@ section {
 .svg {
     max-width: 100%;
     padding-top: 2rem;
+    scroll-behavior: smooth;
+
     /* position:absolute;  */
     /* display: block; */
     /* display: flex;
@@ -384,16 +386,17 @@ section {
     /* background: rgba(255, 255, 255, 0.05); */
 
 }
-#about .details-container {
-     background-color: rgba(255, 235, 235, 0.441);
+/* #about .details-container {
+      background: url(./assets/text.jpg);
       border-radius: 15px; 
       transition: all 0.3s ease;
       border: 0.1rem solid rgba(180, 180, 180, 0.457);
+      background-blend-mode:lighten;
       overflow: hidden;
 
-}
+} */
 #about .details-container h3, #about .details-container p {
-    color:rgba(214, 214, 214, 0.324);
+    color:rgba(214, 214, 214, 0.737);
 }
 /* #about .about-containers {
       background-color: rgba(255, 255, 255, 0.05);
@@ -430,9 +433,44 @@ section {
 border-radius: 2rem; 
 }
 
+.text-container {
+    
+    border: 0.2rem solid rgba(180, 180, 180, 0.457);
+    border-radius: 15px; 
+    /* border-radius: 15px; */
+      /* border-radius: 15px; */
+      /* --s:50px; */
+       
+    border-image: url(./assets/text.jpg) 30 round;
+    /* border-bottom: transparent; */
+    border-left: transparent;
+    border-right: transparent;
+
+
+    /* border-image-slice: 1; */
+    /* border-radius: 15px; */
+    /* mask-image: none;
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect; */
+  overflow: hidden; /* ensures content inside respects border-radius */
+  /* background-origin: border-box;
+background-clip: content-box, border-box;
+  */
+      /* transition: all 0.3s ease;
+      border: 0.1rem solid rgba(180, 180, 180, 0.457);
+      background-blend-mode:lighten; */
+    /* border-image: url(./assets/text.jpg); */
+    /* border-image-slice: 1px; */
+
+}
 .text-container p {
+    margin-top: auto;
+    margin: 0.6rem;
     font-size: small;
     color: whitesmoke;
+    /* background-color: black;
+    border-radius:15px;  */
+    
 }
 
 .arrow{
@@ -452,10 +490,16 @@ border-radius: 2rem;
 .details-container {
     padding: 1.5rem; 
     flex: 1; 
-    /* background: white;  */
-    /* border-radius: 2rem; */
-    /* border: rgb(196, 215, 219) 0.1rem solid;  */
-    /* border-color: rgb(163,163,163); */
+    /* background: white; 
+    border-radius: 2rem;
+    border: rgb(196, 215, 219) 0.1rem solid; 
+    border-color: rgb(163,163,163); */
+     background: url(./assets/text.jpg);
+      border-radius: 15px; 
+      transition: all 0.3s ease;
+      border: 0.1rem solid rgba(180, 180, 180, 0.457);
+      background-blend-mode:lighten;
+      overflow: hidden;
     text-align: center;
     flex:wrap; 
 }
@@ -489,11 +533,11 @@ border-radius: 2rem;
 
 #experience {
     position: relative;
-    /* background-color: rgb(22, 28, 64) ; */ 
+    background-color: rgb(0, 0, 0) ; 
 }
 
 #experience .title , #experience .section__text__p1  {
-    background-image: url('./assets/back.jpg');
+    background-image: url('./assets/text.jpg');
     background-clip: text;
     -webkit-text-fill-color: transparent;
     /* -webkit-text-fill-color: url('back.jpg') ; */
@@ -507,13 +551,15 @@ border-radius: 2rem;
 
 
 .experience-sub-title {
-    color: rgb(85,85,85); 
+    color: black; 
     font-weight: 600; 
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
 
 .experience-details-container {
+    max-width: 80%; 
+    margin: 0 auto; 
     display: flex; 
     justify-content: center;
     flex-direction: column;
@@ -524,8 +570,13 @@ border-radius: 2rem;
     text-align: initial; 
     flex-wrap: wrap; 
     flex-direction: row; 
+    /* padding: auto;  */
+    /* border: 0.1rem black; */
     gap: 4rem; 
     justify-content: space-around;
+}
+#experience .article-container p {
+    color: black;
 }
 
 article {

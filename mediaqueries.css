@@ -2,6 +2,7 @@
     #profile{
         height: 83vh;
         /* margin-bottom: 6rem;  */
+        
     }
     .about-containers, .about-containers2 {
         flex-wrap:wrap; 
@@ -20,6 +21,7 @@
     #experience, 
     .experience-details-container {
         margin-top: 2rem; 
+        background-color: black;
     }
     #profile, 
     .section-container{
