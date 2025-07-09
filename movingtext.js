@@ -15,10 +15,28 @@ var thetextPath = document.querySelector('#moving-text');
 //     })
 // }
 window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY; 
+    const scrollY = window.scrollY; // how far I've scrolled down
     const maxScrollHeight = document.documentElement.scrollHeight - window.innerHeight; 
     const scrollPercent = scrollY / maxScrollHeight; 
+    
+    var thetextPath = document.querySelector('#moving-text');
+    var thetextPathExperience = document.querySelector('#moving-text-experience') ; 
+
 
     thetextPath.setAttribute('startOffset', `${scrollPercent * 100}%`); 
+    var experienceoffset = (scrollPercent * 100) - 20; 
+    
+    thetextPathExperience.setAttribute('startOffset', `${experienceoffset }% `); 
 })
+
+
+// var thetextPathExperience = document.querySelector('#moving-text-experience'); 
+
+// window.addEventListener('scroll', () => {
+//     const scrollY = window.scrollY; 
+//     const maxScrollHeight = document.documentElement.scrollHeight - window.innerHeight; 
+//     const scrollPercent = scrollY / maxScrollHeight; 
+
+//     thetextPath.setAttribute('startOffset', `${scrollPercent * 100}%`); 
+// })
 // })<script type="text/javascript" src="new.js"></script>

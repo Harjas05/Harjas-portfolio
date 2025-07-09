@@ -66,14 +66,22 @@
         </div>
     </section>
     <section id ="about">
-        <svg viewBox="0 0 425 300">
-            <path id="curve-text" d="M -69 137 C 35 87 95 51 143 65 C 201 82 214 129 267 143 c 40.67 14.43 101 -7 238 -83 C 541.3333 53.6667 577.6667 47.3333 709 129" />
+         <!-- <h1 class="title">About Me</h1> -->
+          <div class ="svg">
+        <svg  viewBox="30 40 170 40" width = "93%" height="auto">
+            <defs>
+                <pattern id="imageFill" patternUnits="userSpaceOnUse" width="500" height="200">
+                    <image href="./assets/back.jpg" width="240" height="100" />
+                </pattern>
+            </defs>
+            <path id="curve-text" d="M 4.567 68.477 C 25.356 51.468 40.476 45.798 70.714 48.633 C 102 54 108.996 62.542 139.695 70.367 c 38.743 12.284 105 -0.5 117 -12.5" />
                 <text id="text1" y = "40">
-                <textPath id="moving-text" href="#curve-text" startOffset="50" >Get To Know More About Me</textPath>
+                <textPath id="moving-text" href="#curve-text" startOffset="0" fill="url(#imageFill)"  >Get To Know More About Me</textPath>
                 </text>
         </svg>
-        <!-- <p class="section__text__p1"> Get To Know More</p> -->
-        <!-- <h1 class="title">About Me</h1> -->
+        </div>
+        <!-- <p class="section__text__p1"> Get To Know More</p>
+        <h1 class="title">About Me</h1> -->
         <div class="section-container">
             <div class="section__pic-container">
                 <img src = "./assets/image.png" 
@@ -82,19 +90,21 @@
             </div>
             <div class = "about-details-container">
                 <div class = "about-containers">
+                    <div class ="details-icons">
                     <div class = "details-container">
-                        <img src= "./assets/experience.png" 
+                        <!-- <img src= "./assets/experience.png" 
                         alt = "experience icon"
                         class = "icon"
-                         />
+                         /> -->
                          <h3>Experience</h3>
                          <p> 2+ years <br> Full Stack Development & Cloud Technologies</p>
                     </div>
+                    </div>
                     <div class = "details-container">
-                         <img src= "./assets/education.png" 
+                         <!-- <img src= "./assets/education.png" 
                         alt = "education icon"
                         class = "icon"
-                         />
+                         /> -->
                          <h3>Education</h3>
                          <p> B.S Computer Science </p>
                     </div>
@@ -107,7 +117,10 @@
                         using technologies like React, Flask, SQL, Jinja, AWS, Docker, 
                         and Python to bring ideas to life as polished, user-friendly products. 
                         With hands-on experience in full-stack development, cloud deployments, 
-                        and team collaboration, I’m dedicated to continuously improving my skills and 
+                        and team collaboration.
+                        <br> 
+                        <br>
+                         I’m dedicated to continuously improving my skills and 
                         delivering high-quality software solutions. I love tackling complex problems, 
                         collaborating with diverse teams, and I’m currently recruiting for Summer 2026 internships 
                         and full-time opportunities in software engineering, 
@@ -122,6 +135,13 @@
         
     </section>
     <section id = "experience">
+        <!-- <svg  viewBox="30 40 170 30" width = "100%" height="auto">
+            <path id="curve-text-experience" d="M 0 64.5 C 19 48 38 44.5 72 46.5 C 102 54 110 60.5 149 68 c 38 5.5 105 -0.5 117 -12.5" />
+                <text id="text-experience" y = "40">
+                <textPath id="moving-text-experience" href="#curve-text-experience" startOffset="0" >Explore My Experience</textPath>
+                </text>
+        </svg>
+        </div> -->
         <p class ="section__text__p1"> Explore My</p>
         <h1 class= "title">Experience</h1>
         <div class="experience-details-container"> 
