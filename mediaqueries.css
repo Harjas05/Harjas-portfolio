@@ -18,12 +18,15 @@
     #hamburger-nav {
         display: flex; 
     }
-    #experience, 
+    .title {
+        margin-bottom: 3%;
+    }
+    /* #experience, 
     .experience-details-container {
         /* margin-top: 2rem; 
-        background-color: black; */
-    }
-    #profile, 
+        background-color: black; 
+    } */
+    /* #profile,  */
     .section-container{
         display:block; 
     }
@@ -47,6 +50,10 @@
     .about-containers, .about-containers2 {
         margin-top: 0;
     }
+    #about .details-container1 {
+        flex:1;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {

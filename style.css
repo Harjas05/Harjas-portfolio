@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+:root {
+    --opacity_val: 1;   
+}
 /* General Styling */
 * {
     margin: 0;
@@ -36,6 +39,15 @@ a,
 nav, .nav-links {
     display: flex;
     color: rgb(196, 215, 219);
+      font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0; 
     /* background-color:rgb(48, 60, 126)blue;  */
     /* background-color:steelblue; */
     
@@ -47,6 +59,7 @@ nav {
     height: 7vh;
     /* background-color: rgb(22, 28, 64); */
     background-image: url("./assets/background.jpg");
+    opacity: var(--opacity_val); 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -203,6 +216,7 @@ section {
     height: 80vh;
     /* background-color: rgb(22, 28, 64); */
     background-image: url("./assets/background.jpg");
+    opacity:var(--opacity_val); 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -252,7 +266,8 @@ color:rgb(196, 215, 219);
     "slnt" 0,
     "CRSV" 0.5,
     "ELSH" 0,
-    "ELXP" 0;  
+    "ELXP" 0; 
+    margin-bottom: 0.5%; 
 }
 .section__text__p2 {
     font-size: 1.75rem;
@@ -280,8 +295,12 @@ color:rgb(196, 215, 219);
 
 .icon {
     cursor: pointer; 
-    height: 2rem; 
+    height: 2.5rem; 
 }
+
+/* #contact .icon {
+
+} */
 
 /* Buttons */
 
@@ -724,13 +743,15 @@ article .icon {
 
 .project-title {
     margin: 1rem; 
-    color: rgb(255, 242, 242);
+    /* color: rgba(214, 214, 214, 0.737); */
+    color:rgba(196, 215, 219, 0.737); 
 }
 
 .project-btn {
-    color: rgb(255, 242, 242);
-    border-color: rgb(255, 242, 242); 
+    color:rgba(214, 214, 214, 0.737);
+    border-color:rgba(214, 214, 214, 0.737); 
 }
+
 
 /* Contact Me */
 
@@ -763,6 +784,13 @@ article .icon {
 }
 .contact-info-container p {
     font-size: larger;
+    /* textcolor:rgba(214, 214, 214, 0.737);  */
+}
+.contact-info-container a {
+    /* color:rgba(214, 214, 214, 0.737);  */
+    color:rgba(196, 215, 219, 0.737); 
+
+    /* textcolor:rgba(214, 214, 214, 0.737);  */
 }
 .contact-icon {
     cursor:default; 
