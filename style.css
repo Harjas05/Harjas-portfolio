@@ -91,12 +91,7 @@ a:hover{
     text-decoration-color:rgb(181, 181, 181);
 }
 
-/* .nav-logo {
-    height: auto;
-    width: auto;
-    max-height: 72px;
-    max-width: 250px; 
-} */
+
 .logo{
    font-size: 2rem; 
    align-items: center;
@@ -330,7 +325,9 @@ color:rgb(196, 215, 219);
 }
 .btn-color-1,
 .btn-color-2:hover {
-    background: rgb(22, 28, 64);
+    /* background: rgb(22, 28, 64); */
+    background: rgb(5, 57, 92); 
+
     /* color: whitesmoke;  */
 }
 
@@ -348,10 +345,9 @@ color:rgb(196, 215, 219);
 .btn-color-2:hover {
     border: rgb(255,255,255) 0.1rem solid; 
 }
-.project-btn:hover {
-    background: rgb(170, 241, 255); 
-   
-}
+/* .project-btn:hover {
+       background: rgb(28, 9, 97); 
+} */
 
 .btn-container{
     gap:1rem; 
@@ -653,15 +649,19 @@ background-clip: content-box, border-box;
     /* border: 0.1rem black; */
     gap: 4rem; 
     justify-content: space-around;
+    
 }
 
 
 article {
-    display: flex; 
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center; 
     width: 10rem; 
     justify-content: space-around; 
     gap: 0.5rem;
     color:rgba(214, 214, 214, 0.737);
+    /* flex-direction: row; */
     /* color:rgb(255, 242, 242);  */
  
 }
